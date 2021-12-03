@@ -40,6 +40,9 @@ PODS:
     - React-jsi (= 0.64.3)
     - ReactCommon/turbomodule/core (= 0.64.3)
   - glog (0.3.5)
+  - mParticle-Apple-SDK (8.5.4):
+    - mParticle-Apple-SDK/mParticle (= 8.5.4)
+  - mParticle-Apple-SDK/mParticle (8.5.4)
   - RCT-Folly (2020.01.13.00):
     - boost-for-react-native
     - DoubleConversion
@@ -233,8 +236,12 @@ PODS:
     - React-jsi (= 0.64.3)
     - React-perflogger (= 0.64.3)
   - React-jsinspector (0.64.3)
+  - react-native-mparticle (2.6.0):
+    - React
   - react-native-safe-area-context (3.3.2):
     - React-Core
+  - react-native-tracking-transparency (0.1.1):
+    - React
   - React-perflogger (0.64.3)
   - React-RCTActionSheet (0.64.3):
     - React-Core/RCTActionSheetHeaders (= 0.64.3)
@@ -354,6 +361,7 @@ DEPENDENCIES:
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - mParticle-Apple-SDK
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
@@ -367,7 +375,9 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-mparticle (from `../node_modules/react-native-mparticle`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
+  - react-native-tracking-transparency (from `../node_modules/react-native-tracking-transparency`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -388,6 +398,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - boost-for-react-native
+    - mParticle-Apple-SDK
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -448,8 +459,12 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  react-native-mparticle:
+    :path: "../node_modules/react-native-mparticle"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
+  react-native-tracking-transparency:
+    :path: "../node_modules/react-native-tracking-transparency"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -503,6 +518,7 @@ SPEC CHECKSUMS:
   FBLazyVector: c71c5917ec0ad2de41d5d06a5855f6d5eda06971
   FBReactNativeSpec: 036dc257e4f03f879524a87cc09172b44cafd3e3
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
+  mParticle-Apple-SDK: cc5e0c0bb5cdc90f647c5d01e77b112d82258e69
   RCT-Folly: ec7a233ccc97cc556cf7237f0db1ff65b986f27c
   RCTRequired: d34bf57e17cb6e3b2681f4809b13843c021feb6c
   RCTTypeSafety: 8dab4933124ed39bb0c1d88d74d61b1eb950f28f
@@ -514,7 +530,9 @@ SPEC CHECKSUMS:
   React-jsi: a8b09c29521c798f1783348b37b511ba7b3dbeb3
   React-jsiexecutor: df6abc9fafbecb8e5b7a5fbc5e6d4bd017d594d5
   React-jsinspector: 34e23860273a23695342f58eed3ffd3ba10c31e0
+  react-native-mparticle: 52721bc7ab9de82ec2e498a6080f24cee173a35b
   react-native-safe-area-context: 584dc04881deb49474363f3be89e4ca0e854c057
+  react-native-tracking-transparency: b2029ff756f1128b1f2c7c7c7f3003bc3c950f9f
   React-perflogger: cc76a4254d19640f1d8ad1c66fdee800414b805c
   React-RCTActionSheet: 7448f049318d8d7e8a9a1ebb742ada721757eea8
   React-RCTAnimation: fb9b3fa1a4a9f5e6ab01b3368693ce69860ba76a
@@ -532,6 +550,6 @@ SPEC CHECKSUMS:
   RNScreens: 6e1ea5787989f92b0671049b808aef64fa1ef98c
   Yoga: e6ecf3fa25af9d4c87e94ad7d5d292eedef49749
 
-PODFILE CHECKSUM: 4cd92d6317591a3baffc1b9120a3fe38500a45d5
+PODFILE CHECKSUM: a8d107c1392641bed4c1f542525fe2f344903228
 
 COCOAPODS: 1.10.1
