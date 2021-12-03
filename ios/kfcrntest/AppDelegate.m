@@ -49,9 +49,9 @@ static void InitializeFlipper(UIApplication *application) {
 //    rootView.backgroundColor = [UIColor whiteColor];
   }
 
-  // Build mParticle Config 
-  MParticleOptions *options = [MParticleOptions optionsWithKey:@"us1-676663aaaca5634cb331a2ce9757bc24"
-                                                        secret:@"f6-XjBN4rSmOfJAefKZmoz8EYAjE9FFldY7F4BEpNq59caNQtg9a6gPC4yFGfol3"];
+  // Build mParticle Config
+  MParticleOptions *options = [MParticleOptions optionsWithKey:@"MPARTICLE_KEY"
+                                                        secret:@"MPARTICLE_SECRET"];
   MPIdentityApiRequest *identityRequest = [MPIdentityApiRequest requestWithEmptyUser];
   options.identifyRequest = identityRequest;
   options.environment = MPEnvironmentDevelopment;
