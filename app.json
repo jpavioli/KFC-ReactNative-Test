@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "kfc-rn-test",
+    "slug": "kfc-rn-test",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "kfc-rn-test"
+}
